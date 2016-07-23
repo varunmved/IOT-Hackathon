@@ -1,0 +1,13 @@
+{
+  "name": "Thermometer_demo",
+  "description": "A remote sensor demo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "express": "latest",
+    "socket.io": "latest"
+  }
+}
