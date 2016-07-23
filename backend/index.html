@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thermometer Demo</title>    
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/gauge.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/app.js"></script>
+    
+
+
+
+</head>
+<body>
+
+            <div>
+                <canvas id="temp" width="200" height="200"
+        		data-type="canv-gauge"
+        		data-title="Temperature"
+        		data-min-value="40"
+        		data-max-value="100"
+        		data-major-ticks="40 50 60 70 80 90 100"
+        		data-minor-ticks="10"
+        		data-stroke-ticks="true"
+        		data-units=" degrees F"
+        		data-value-format="3.1"
+        		data-glow="true"
+        		data-animation-delay="10"
+        		data-animation-duration="200"
+        		data-animation-fn="bounce"
+        		data-colors-needle="#f00 #00f"
+        		data-highlights="40 80 #06B70F, 80 90 #F5E940, 90 100 #FB0808"
+    	      ></canvas>
+    	    </div>
+    <div>
+        <button id="led_button" onclick="toggle_led('on')">Turn on led</button>
+    </div>
+      
+
+</body>
+</html>
