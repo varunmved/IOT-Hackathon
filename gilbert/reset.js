@@ -1,0 +1,9 @@
+var mraa = require('mraa');
+
+for (var i = 0; i < 14; i++){
+  var newLed = new mraa.Gpio(i);
+  newLed.dir(mraa.DIR_OUT);
+  newLed.write(0);
+}
+
+console.log("All ports off.")
